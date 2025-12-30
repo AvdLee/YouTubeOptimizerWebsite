@@ -1,0 +1,96 @@
+---
+const steps = [
+  {
+    number: "1",
+    title: "Connect",
+    description: "Link your YouTube channel"
+  },
+  {
+    number: "2",
+    title: "Analyze",
+    description: "We scan your videos and metadata"
+  },
+  {
+    number: "3",
+    title: "Fix",
+    description: "See what to improve, one step at a time"
+  }
+];
+---
+
+<section class="how-it-works">
+  <div class="container">
+    <h2 class="how-it-works-title">How it works</h2>
+    <div class="steps-grid">
+      {steps.map((step) => (
+        <div class="step">
+          <div class="step-number">{step.number}</div>
+          <h3 class="step-title">{step.title}</h3>
+          <p class="step-description">{step.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .how-it-works {
+    padding: var(--spacing-3xl) 0;
+    background: var(--gradient-bg);
+  }
+
+  .how-it-works-title {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-text);
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .step {
+    text-align: center;
+  }
+
+  .step-number {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin: 0 auto var(--spacing-md);
+  }
+
+  .step-title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text);
+  }
+
+  .step-description {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+  }
+
+  @media (max-width: 768px) {
+    .how-it-works {
+      padding: var(--spacing-2xl) 0;
+    }
+
+    .steps-grid {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+    }
+  }
+</style>
+

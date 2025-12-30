@@ -1,0 +1,112 @@
+---
+const tiles = [
+  {
+    title: "Focus queue",
+    description: "A short list of the few things that matter right now."
+  },
+  {
+    title: "Basics (deterministic)",
+    description: "Clear fundamentals that are either present or missing."
+  },
+  {
+    title: "Viewer pathways",
+    description: "Cards, end screens, subscribe and \"watch next\" signals — clearly grouped."
+  },
+  {
+    title: "Tags & hashtags clarity",
+    description: "See what keywords you're targeting today, and how strong they are."
+  },
+  {
+    title: "Explainable signals",
+    description: "Scores where useful — always tied to something you can change."
+  },
+  {
+    title: "Built for creators",
+    description: "Created by a YouTube creator, for YouTube creators."
+  }
+];
+---
+
+<section id="features" class="bento-section">
+  <div class="container">
+    <h2 class="bento-title">What it checks</h2>
+    <div class="bento-grid">
+      {tiles.map((tile) => (
+        <div class="bento-tile">
+          <h3 class="tile-title">{tile.title}</h3>
+          <p class="tile-description">{tile.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .bento-section {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-bg);
+  }
+
+  .bento-title {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-text);
+  }
+
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+  }
+
+  .bento-tile {
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-xl);
+    box-shadow: 0 2px 8px var(--color-shadow);
+    transition: all 0.2s ease;
+  }
+
+  .bento-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px var(--color-shadow);
+    border-color: var(--color-text-secondary);
+  }
+
+  .tile-title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+  }
+
+  .tile-description {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+  }
+
+  /* Tablet: 2 columns */
+  @media (max-width: 1024px) {
+    .bento-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Mobile: 1 column */
+  @media (max-width: 768px) {
+    .bento-section {
+      padding: var(--spacing-2xl) 0;
+    }
+
+    .bento-grid {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-md);
+    }
+
+    .bento-tile {
+      padding: var(--spacing-lg);
+    }
+  }
+</style>
+

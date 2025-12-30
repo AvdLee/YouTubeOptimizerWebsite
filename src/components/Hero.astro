@@ -1,0 +1,251 @@
+---
+---
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-icon">
+      <img src="/icon.png" alt="YouTube Optimizer" class="app-icon" />
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-headline">Fix what surrounds your videos.</h1>
+      <p class="hero-subheadline">
+        Titles, descriptions, tags, pathways, and fundamentals — clearly showing what's holding your videos back and what to fix next.
+      </p>
+      
+      <!-- ConvertKit Form -->
+      <div id="hero-convertkit-form-container" class="hero-form-container">
+        <script async data-uid="e51eee4bc2" src="https://ytstudiooptimizer.kit.com/e51eee4bc2/index.js"></script>
+      </div>
+      
+      <p class="hero-trust">Built by a YouTube creator, for YouTube creators.</p>
+    </div>
+    
+    <div class="hero-visual">
+      <div class="app-preview-gallery">
+        <div class="preview-item">
+          <img src="/app_preview_1.png" alt="App preview 1" class="preview-image" />
+        </div>
+        <div class="preview-item preview-item-center">
+          <img src="/app_preview_2.png" alt="App preview 2" class="preview-image" />
+        </div>
+        <div class="preview-item">
+          <img src="/app_preview_3.png" alt="App preview 3" class="preview-image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding: var(--spacing-3xl) 0;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background: var(--gradient-bg);
+  }
+
+  .hero-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .app-icon {
+    width: 256px;
+    height: 256px;
+    object-fit: contain;
+    border-radius: var(--radius-2xl);
+  }
+
+  .hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero-headline {
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text);
+  }
+
+  .hero-subheadline {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-text-secondary);
+  }
+
+  .hero-form-container {
+    min-height: 60px;
+    max-width: 500px;
+    margin: 0 auto var(--spacing-md);
+    text-align: center;
+  }
+
+  /* Style ConvertKit form elements in hero */
+  .hero-form-container :global(form) {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-sm);
+    align-items: stretch;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-form-container :global(input[type="email"]) {
+    flex: 1;
+    padding: 0.875rem 1.25rem;
+    font-size: var(--font-size-base);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: var(--color-bg-elevated);
+    color: var(--color-text);
+    font-family: inherit;
+    transition: all 0.2s ease;
+  }
+
+  .hero-form-container :global(input[type="email"]:focus) {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+  }
+
+  .hero-form-container :global(input[type="email"]::placeholder) {
+    color: var(--color-text-secondary);
+  }
+
+  .hero-form-container :global(button[type="submit"]),
+  .hero-form-container :global(input[type="submit"]) {
+    flex-shrink: 0;
+    padding: 0.875rem 2rem;
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    border-radius: var(--radius-lg);
+    border: none;
+    background: var(--color-primary);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+
+  .hero-form-container :global(button[type="submit"]:hover),
+  .hero-form-container :global(input[type="submit"]:hover) {
+    background: var(--color-primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2);
+  }
+
+  .hero-trust {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-top: var(--spacing-md);
+  }
+
+  .hero-visual {
+    margin-top: var(--spacing-3xl);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .app-preview-gallery {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 var(--spacing-lg);
+  }
+
+  .preview-item {
+    flex: 1;
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+
+  .preview-item:hover {
+    transform: translateY(-8px);
+  }
+
+  .preview-item-center {
+    transform: scale(1.05);
+  }
+
+  .preview-item-center:hover {
+    transform: scale(1.05) translateY(-8px);
+  }
+
+  .preview-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 32px rgba(0, 0, 0, 0.12));
+    transition: filter 0.3s ease;
+  }
+
+  .preview-item:hover .preview-image {
+    filter: drop-shadow(0 12px 40px rgba(0, 0, 0, 0.16));
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: var(--spacing-2xl) 0;
+      min-height: auto;
+    }
+
+    .hero-headline {
+      font-size: var(--font-size-4xl);
+    }
+
+    .hero-subheadline {
+      font-size: var(--font-size-lg);
+    }
+
+    .hero-form-container :global(form) {
+      flex-direction: column;
+    }
+
+    .hero-form-container :global(input[type="email"]) {
+      width: 100%;
+    }
+
+    .hero-form-container :global(button[type="submit"]),
+    .hero-form-container :global(input[type="submit"]) {
+      width: 100%;
+    }
+
+    .app-preview-gallery {
+      flex-direction: column;
+      align-items: center;
+      gap: var(--spacing-md);
+      padding: 0;
+    }
+
+    .preview-item {
+      max-width: 280px;
+      width: 100%;
+    }
+
+    .preview-item-center {
+      transform: none;
+    }
+
+    .preview-item-center:hover {
+      transform: translateY(-8px);
+    }
+
+    .app-icon {
+      width: 192px;
+      height: 192px;
+    }
+  }
+</style>
+

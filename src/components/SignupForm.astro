@@ -1,0 +1,123 @@
+---
+
+---
+
+<section id="signup" class="signup-section">
+  <div class="container">
+    <div class="signup-content">
+      <h2 class="signup-title">Join the early beta</h2>
+      <p class="signup-description">
+        Be among the first YouTube creators to optimize what surrounds your videos.
+      </p>
+      
+      <!-- ConvertKit Form -->
+      <div id="convertkit-form-container"></div>
+      
+      <script async data-uid="e51eee4bc2" src="https://ytstudiooptimizer.kit.com/e51eee4bc2/index.js"></script>
+    </div>
+  </div>
+</section>
+
+<style>
+  .signup-section {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-bg);
+  }
+
+  .signup-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .signup-title {
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
+  }
+
+  .signup-description {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-text-secondary);
+  }
+
+  /* ConvertKit will inject the form here */
+  #convertkit-form-container {
+    min-height: 100px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Style ConvertKit form elements to match our design */
+  #convertkit-form-container :global(form) {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-sm);
+    align-items: stretch;
+  }
+
+  #convertkit-form-container :global(input[type="email"]) {
+    flex: 1;
+    padding: 0.875rem 1.25rem;
+    font-size: var(--font-size-base);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: var(--color-bg-elevated);
+    color: var(--color-text);
+    font-family: inherit;
+    transition: all 0.2s ease;
+  }
+
+  #convertkit-form-container :global(input[type="email"]:focus) {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+  }
+
+  #convertkit-form-container :global(input[type="email"]::placeholder) {
+    color: var(--color-text-secondary);
+  }
+
+  #convertkit-form-container :global(button[type="submit"]),
+  #convertkit-form-container :global(input[type="submit"]) {
+    flex-shrink: 0;
+    padding: 0.875rem 2rem;
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    border-radius: var(--radius-lg);
+    border: none;
+    background: var(--color-primary);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+
+  #convertkit-form-container :global(button[type="submit"]:hover),
+  #convertkit-form-container :global(input[type="submit"]:hover) {
+    background: var(--color-primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .signup-section {
+      padding: var(--spacing-2xl) 0;
+    }
+
+    #convertkit-form-container :global(form) {
+      flex-direction: column;
+    }
+
+    #convertkit-form-container :global(input[type="email"]) {
+      width: 100%;
+    }
+
+    #convertkit-form-container :global(button[type="submit"]),
+    #convertkit-form-container :global(input[type="submit"]) {
+      width: 100%;
+    }
+  }
+</style>
+
