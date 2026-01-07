@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const lastUpdated = 'January 7, 2026';
+---
+
+<BaseLayout title="Privacy Policy">
+  <main class="policy">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Last updated: {lastUpdated}</p>
+
+      <section>
+        <h2>What Data We Access</h2>
+        <p>
+          To provide optimization features, the app uses the YouTube Data API and YouTube Analytics API to
+          fetch video content, performance metrics, and channel information for the logged-in YouTube
+          account. Only data necessary to support these features is requested.
+        </p>
+      </section>
+
+      <section>
+        <h2>How We Use Your Data</h2>
+        <p>
+          Retrieved data is used to analyze performance and propose improvements. When you choose to apply
+          changes, the app updates video metadata (such as titles, descriptions, tags, and thumbnails)
+          through the YouTube APIs based on your interactions in the app.
+        </p>
+      </section>
+
+      <section>
+        <h2>Sharing with Third-Party AI Services</h2>
+        <p>
+          Some data returned from YouTube APIs may be processed by third-party AI tools, including OpenAI
+          APIs, to generate suggestions and metadata updates. These services use the data only to support
+          the requested improvements and do not receive ownership of your content.
+        </p>
+      </section>
+
+      <section>
+        <h2>Performance Disclaimer</h2>
+        <p>
+          The app aims to improve channel performance by following industry best practices and YouTube
+          recommendations. Outcomes may vary, and the app cannot be held responsible for decreased
+          performance, including situations where user choices (for example, drastic manual changes to
+          descriptions or hashtags) reduce results.
+        </p>
+      </section>
+
+      <section>
+        <h2>Your Choices</h2>
+        <p>
+          You may disconnect your YouTube account at any time. You are responsible for reviewing suggested
+          changes before they are applied and for complying with YouTube policies and applicable laws.
+        </p>
+      </section>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .policy {
+    padding: var(--spacing-3xl) 0 var(--spacing-2xl);
+    background: var(--gradient-bg);
+  }
+
+  h1 {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .meta {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  section {
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  section h2 {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  section p {
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .policy {
+      padding: var(--spacing-2xl) 0 var(--spacing-xl);
+    }
+
+    section {
+      padding: var(--spacing-lg);
+    }
+  }
+</style>
+

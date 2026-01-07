@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const lastUpdated = 'January 7, 2026';
+---
+
+<BaseLayout title="Terms of Service">
+  <main class="policy">
+    <div class="container">
+      <h1>Terms of Service</h1>
+      <p class="meta">Last updated: {lastUpdated}</p>
+
+      <section>
+        <h2>Using the App</h2>
+        <p>
+          The YouTube Optimizer app helps creators improve channel performance by adjusting video metadata
+          and related assets. You must connect a YouTube account you own or are authorized to manage.
+        </p>
+      </section>
+
+      <section>
+        <h2>Data from YouTube APIs</h2>
+        <p>
+          The app uses the YouTube Data API and YouTube Analytics API to fetch video content and performance
+          information for the authenticated channel. Access is limited to the scopes required to deliver
+          the app&apos;s optimization features.
+        </p>
+      </section>
+
+      <section>
+        <h2>Updating Video Metadata</h2>
+        <p>
+          When you approve changes in the app, we update video metadata (such as titles, descriptions,
+          tags, and thumbnails) on your behalf through the YouTube APIs. You remain responsible for the
+          accuracy and appropriateness of any updates you accept.
+        </p>
+      </section>
+
+      <section>
+        <h2>Use of Third-Party AI Services</h2>
+        <p>
+          Returned data from YouTube APIs may be shared with third-party AI services, including OpenAI APIs,
+          to generate recommendations and improvements. These services process the data solely to provide
+          optimization suggestions and metadata updates.
+        </p>
+      </section>
+
+      <section>
+        <h2>Performance Expectations and Liability</h2>
+        <p>
+          The app is designed to follow industry best practices and YouTube recommendations to improve
+          channel performance. However, results are not guaranteed. The app cannot be held responsible for
+          decreased performance, including when user choices (for example, drastic manual changes to
+          descriptions or hashtags) negatively affect results. Use the app at your own discretion.
+        </p>
+      </section>
+
+      <section>
+        <h2>User Responsibilities</h2>
+        <p>
+          You agree to use the app in compliance with YouTube&apos;s Terms of Service and all applicable
+          laws. You are responsible for all actions taken through your account and for reviewing any changes
+          before they are applied.
+        </p>
+      </section>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .policy {
+    padding: var(--spacing-3xl) 0 var(--spacing-2xl);
+    background: var(--gradient-bg);
+  }
+
+  h1 {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .meta {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  section {
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  section h2 {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  section p {
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .policy {
+      padding: var(--spacing-2xl) 0 var(--spacing-xl);
+    }
+
+    section {
+      padding: var(--spacing-lg);
+    }
+  }
+</style>
+
