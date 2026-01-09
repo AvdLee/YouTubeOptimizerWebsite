@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const lastUpdated = 'January 7, 2026';
+const lastUpdated = 'January 9, 2026';
 ---
 
 <BaseLayout title="Privacy Policy">
@@ -15,7 +15,9 @@ const lastUpdated = 'January 7, 2026';
         <p>
           To provide optimization features, the app uses the YouTube Data API and YouTube Analytics API to
           fetch video content, performance metrics, and channel information for the logged-in YouTube
-          account. Only data necessary to support these features is requested.
+          account. We also receive identifiers needed for authentication (such as your Google account and
+          channel IDs) limited to the scopes you approve. Only data necessary to support these features is
+          requested; we do not collect data unrelated to YouTube channel optimization.
         </p>
       </section>
 
@@ -24,7 +26,8 @@ const lastUpdated = 'January 7, 2026';
         <p>
           Retrieved data is used to analyze performance and propose improvements. When you choose to apply
           changes, the app updates video metadata (such as titles, descriptions, tags, and thumbnails)
-          through the YouTube APIs based on your interactions in the app.
+          through the YouTube APIs based on your interactions in the app. Data is used only to provide and
+          improve Vydio features; it is not sold, used for advertising, or shared for unrelated purposes.
         </p>
       </section>
 
@@ -32,8 +35,29 @@ const lastUpdated = 'January 7, 2026';
         <h2>Sharing with Third-Party AI Services</h2>
         <p>
           Some data returned from YouTube APIs may be processed by third-party AI tools, including OpenAI
-          APIs, to generate suggestions and metadata updates. These services use the data only to support
-          the requested improvements and do not receive ownership of your content.
+          APIs, to generate suggestions and metadata updates. These providers act as processors on our
+          behalf, use the data only to support the requested improvements, and do not receive ownership of
+          your content. We do not allow these providers to use your data for training unrelated models or
+          for advertising.
+        </p>
+      </section>
+
+      <section>
+        <h2>How We Protect Your Data</h2>
+        <p>
+          We use industry-standard encryption in transit and restrict access to authorized team members who
+          need it to operate the service. Access tokens and sensitive data are stored securely and scoped to
+          the minimum required permissions.
+        </p>
+      </section>
+
+      <section>
+        <h2>Data Retention and Deletion</h2>
+        <p>
+          We retain YouTube data and related analysis only as long as needed to provide the optimization
+          features you request or to meet legal obligations. You can disconnect your YouTube account at any
+          time; upon disconnection or a deletion request, we remove stored access tokens and purge related
+          cached data. To request deletion, contact us at support@vydio.app.
         </p>
       </section>
 
