@@ -1,6 +1,6 @@
-# YouTube Optimizer Website
+# Vydio Website
 
-The landing page for the YouTube Studio Optimizer app.
+The landing page for the Vydio app.
 
 ## Getting Started
 
