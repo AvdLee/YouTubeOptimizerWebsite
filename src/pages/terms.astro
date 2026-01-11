@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const lastUpdated = 'January 7, 2026';
+const lastUpdated = 'January 11, 2026';
 ---
 
 <BaseLayout title="Terms of Service">
@@ -21,9 +21,10 @@ const lastUpdated = 'January 7, 2026';
       <section>
         <h2>Data from YouTube APIs</h2>
         <p>
-          The app uses the YouTube Data API and YouTube Analytics API to fetch video content and performance
-          information for the authenticated channel. Access is limited to the scopes required to deliver
-          the app&apos;s optimization features.
+          The app uses the YouTube Data API and YouTube Analytics API to fetch video and channel metadata
+          (including titles, descriptions, thumbnails, tags, and comments) and performance information for
+          the authenticated channel. Access is limited to the scopes required to deliver the app&apos;s
+          optimization features.
         </p>
       </section>
 
@@ -37,11 +38,11 @@ const lastUpdated = 'January 7, 2026';
       </section>
 
       <section>
-        <h2>Use of Third-Party AI Services</h2>
+        <h2>No Sharing with Third-Party AI Services</h2>
         <p>
-          Returned data from YouTube APIs may be shared with third-party AI services, including OpenAI APIs,
-          to generate recommendations and improvements. These services process the data solely to provide
-          optimization suggestions and metadata updates.
+          Data returned from the YouTube Data API and YouTube Analytics API is not sent to external AI
+          services. We do not use your data to train AI models or allow third parties to use it for
+          advertising or unrelated purposes.
         </p>
       </section>
 
